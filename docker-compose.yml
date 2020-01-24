@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: empanada_admin
+    environment:
+      - APPLICATION_PORT=3310
+      - DATABASE_URL=mongodb://root:gtf@178.128.254.49:27017/imptfc?authSource=admin
+      - DATABASE_SSL=false
+      - FOREST_AUTH_SECRET=49ab2dcf90f289902a41eeca524cbbde3d95f87e755b6a7136dec8feb856d0f39a9cb0e5db803e13d3c248ab05591181
+      - FOREST_ENV_SECRET=98c482f8e577b49a333fa965995c68e9a728a599e854bd0bffce15a4c6aa9699
+    ports:
+      - "3310:3310"
+    volumes:
+      - ./:/usr/src/app
