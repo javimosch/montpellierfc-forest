@@ -220,7 +220,7 @@
     "liana": "forest-express-mongoose",
     "liana_version": "5.7.0",
     "engine": "nodejs",
-    "engine_version": "12.13.1",
+    "engine_version": "13.7.0",
     "framework": "express",
     "framework_version": "~4.16.3",
     "orm_version": "5.8.9"

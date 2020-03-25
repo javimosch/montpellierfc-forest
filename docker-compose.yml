@@ -4,8 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: empanada_admin
+    container_name: montpellier-fc-forest-admin-backend
     environment:
+      - NODE_ENV=production
       - APPLICATION_PORT=3310
       - DATABASE_URL=mongodb://root:gtf@178.128.254.49:27017/imptfc?authSource=admin
       - DATABASE_SSL=false
